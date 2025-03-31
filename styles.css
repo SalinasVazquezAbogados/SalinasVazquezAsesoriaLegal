@@ -1,0 +1,160 @@
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  color: #4A4A4A;
+}
+
+header {
+  background-color: #002D62;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #002D62;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #002D62;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.servicios-lista {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.servicio {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 22%;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.servicio-icono {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.servicio h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, textarea, button {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  background-color: #C7A977;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #B39260;
+}
+
+/* Footer */
+footer {
+  background-color: #002D62;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: #C7A977;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .servicios-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicio {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 120px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
